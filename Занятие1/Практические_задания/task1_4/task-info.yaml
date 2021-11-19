@@ -9,7 +9,7 @@ files:
   visible: true
   placeholders:
   - offset: 42
-    length: 58
+    length: 83
     placeholder_text: '[word.upper() for word in words]  # TODO перевести слова в
       верхний регистр c помощью map'
     initial_state:
@@ -17,7 +17,7 @@ files:
       offset: 42
     initialized_from_dependency: false
     selected: true
-    status: Unchecked
+    status: Solved
     encrypted_possible_answer: list(map(str.upper, words))
   text: |
     def task(words: list) -> list:
@@ -38,5 +38,8 @@ files:
 - name: __init__.py
   visible: false
   learner_created: false
-status: Unchecked
+status: Solved
+feedback:
+  message: Congratulations!
+  time: Fri, 19 Nov 2021 22:22:45 UTC
 record: -1

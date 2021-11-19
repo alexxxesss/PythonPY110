@@ -13,5 +13,29 @@ files:
 - name: __init__.py
   visible: false
   learner_created: false
-status: Unchecked
+status: Failed
+feedback:
+  message: Incorrect
+  time: Fri, 19 Nov 2021 22:32:35 UTC
+  actual: |
+    (0, 'a')
+    (1, 's')
+    (2, 'd')
+    (3, 'f')
+    (4, 'w')
+    (5, 'n')
+    (6, 'k')
+    (7, 'd')
+    (8, 'f')
+    (9, 'n')
+    (10, 'g')
+    (11, 'd')
+    (12, 'k')
+    (13, 'f')
+    (14, 'm')
+    (15, 'n')
+    (16, '2')
+    (17, '3')
+    (18, '4')
+    (19, 'g')
 record: -1
