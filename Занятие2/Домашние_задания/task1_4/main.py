@@ -5,7 +5,7 @@ def pairwise(iterable):
 
 def task():
     for pair in pairwise("ABCDEFG"):
-        print(pair)
+        print(pair[0] + pair[1])
 
 
 if __name__ == "__main__":

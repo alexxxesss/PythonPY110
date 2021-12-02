@@ -1,5 +1,8 @@
 def pow_gen(base: int):
-    ...  # TODO записать функцию-генератор
+    count = 0
+    while True:
+        yield base ** count
+        count += 1
 
 
 if __name__ == "__main__":

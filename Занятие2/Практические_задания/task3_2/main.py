@@ -1,3 +1,4 @@
+import random
 import time
 
 
@@ -7,19 +8,21 @@ def time_decorator(fn):
     def wrapper(*args, **kwargs):
         print("Этот код будет выполняться перед каждым вызовом функции")
 
-        # TODO зафиксировать время до начала выполнения функции
+        start = time.time()
         result = fn(*args, **kwargs)
-        # TODO зафиксировать время после выполнения
+        time.sleep(random.randint(0, 5))
+        print(time.time() - start)
 
         print("Этот код будет выполняться после каждого вызова функции")
         return result
     return wrapper
 
 
-# TODO задекорировать функцию
+@time_decorator
 def pow_(a, n):
     return pow(a, n)
 
+pow_with_decorator = time_decorator(pow_)
 
 if __name__ == "__main__":
     print(pow_)
@@ -29,3 +32,5 @@ if __name__ == "__main__":
     print("=" * 25)
 
     print(pow_(4, 4))
+
+    pow_with_decorator(5, 2)
