@@ -13,13 +13,13 @@ files:
 - name: __init__.py
   visible: false
   learner_created: false
-- name: input_2.json
+- name: output.json
   visible: true
   learner_created: true
 - name: input_1.json
   visible: true
   learner_created: true
-- name: output.json
+- name: input_2.json
   visible: true
   learner_created: true
 status: Unchecked
