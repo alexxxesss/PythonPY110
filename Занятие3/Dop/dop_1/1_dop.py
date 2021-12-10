@@ -16,6 +16,7 @@ def decorator(fn):
 def some_func(*args):
     return args
 
+
 if __name__ == "__main__":
 
     print(some_func(1, 2, 3, 4))
