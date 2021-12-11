@@ -13,11 +13,11 @@ def valuation(st):
             if x.isalpha():
                 value += ord(x)
         list_value.append(value)
-    return print(st.split()[max(list(enumerate(list_value, 0)), key=lambda num:num[1])[0]])
+    return st.split()[max(list(enumerate(list_value, 0)), key=lambda num:num[1])[0]]
 
 
 
 if __name__ == "__main__":
 
     stroka = 'Добрый день Господин'
-    valuation(stroka)
+    print(valuation(stroka))
