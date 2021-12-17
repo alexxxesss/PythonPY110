@@ -54,7 +54,7 @@ def surname(male: str) -> str:
 
 
 def email(email_name: str, email_female: str) -> str:
-    return f'{slugify(email_name)}{slugify(email_female)}.{fake_ru.free_email_domain()}'
+    return f'{slugify(email_name)}{slugify(email_female)}@{fake_ru.free_email_domain()}'
 
 
 def phone() -> str:
