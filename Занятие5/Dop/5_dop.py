@@ -12,7 +12,6 @@ def func(str_):
         print(f'{str_[:len(str_)//2][::-1]}{str_[len(str_)//2]}{str_[len(str_)//2 + 1:][::-1]}')
 
 
-
 if __name__ == "__main__":
     stroka = '1'
     func(stroka)
